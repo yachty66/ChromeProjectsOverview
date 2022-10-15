@@ -1,0 +1,25 @@
+{
+  "name": "new",
+  "description": "new",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+      "service_worker": "background.js"
+    },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": [
+    "https://*.stackoverflow.com/*"
+  ],
+  "action": {
+    "default_icon": {
+      "128": "/images/sigma128.png"
+    }
+  },
+  "icons": {
+    "128": "/images/sigma128.png"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
